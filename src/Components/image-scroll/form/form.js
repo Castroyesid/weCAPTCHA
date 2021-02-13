@@ -1,6 +1,7 @@
 import React from 'react'
 import './form.css'
 
+
 class NameForm extends React.Component {
     constructor(props) {
       super(props);
@@ -11,12 +12,14 @@ class NameForm extends React.Component {
   
     handleChange(event) {    
         this.setState({value: event.target.value});  
+        
     }
     handleSubmit(event) {
       alert('A name was submitted: ' + this.state.value);
       event.preventDefault();
+      console.log(this.props.dataSend)
     }
-  
+    
     render() {
       return (
         <form onSubmit={this.handleSubmit}> 

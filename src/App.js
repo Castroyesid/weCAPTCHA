@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ShowImage from './Components/image-scroll/image-scroll';
-import NameForm from './Components/form/form'
+import NameForm from './Components/image-scroll/form/form'
 import Header from './Components/Header/Header'
 
 function App() {
@@ -11,7 +11,6 @@ function App() {
       <div className="buttAlign">
         <Header />
         <ShowImage />
-        <NameForm />
       </div>
     </div>
   );

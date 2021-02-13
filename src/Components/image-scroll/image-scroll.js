@@ -1,6 +1,7 @@
 import React from 'react';
 import './image-scroll.css';
 import TestImage from '../../images/01.jpeg'
+import NameForm from './form/form'
 
 
 let c = '00';
@@ -34,6 +35,7 @@ class ShowImage extends React.Component {
                     <img src={process.env.PUBLIC_URL + `/img/${this.state.cc}.jpeg`} className='imager'/>
                 </div>
                 <button onClick={this.handleClick}>Click Me!</button>
+                <NameForm dataSend={c} />
             </div>
         );
     }
