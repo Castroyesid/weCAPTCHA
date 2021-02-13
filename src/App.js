@@ -2,16 +2,21 @@ import React from 'react';
 import { Button } from '@material-ui/core'
 import logo from './logo.svg'
 import './App.css'
-import Home from './components/Home/Home'
 import MyForm from './components/MyForm.cs'
 import { ReactComponent as Logo } from './logo.svg';
-import ReactLogo from './Logo.png';
+import ReactLogo from './logo.png';
 import Treehacks from './Treehacks.png'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import CustomerForm from './components/CustomerForm.js';
 import MyFormJS from './components/MyForm.js';
-
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { NavigationBar } from './components/NavigationBar';
+import { Home } from './components/Home/Home';
+import { About } from './About';
+import { NoMatch } from './NoMatch';
+import Sidebar from './components/Sidebar';
 
 
 function handleNewButton(){
