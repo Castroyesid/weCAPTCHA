@@ -6,6 +6,7 @@ import NavBar from './components/NavBar.css'
 import ShowImage from './components/image-scroll/image-scroll.js'
 import NameForm from './components/image-scroll/form/form'
 import OutputPracticeFeed from './components/PracticeFeed.js'
+import ImportPhoto from './components/ImportPhoto.js'
 
 
 import {
@@ -79,7 +80,8 @@ function InputATranslation() {
 function UploadAnImage() {
   return (
     <div className="App">
-      <h3>Upload the image and caption</h3>
+      <h3>Select an image, and fill in captions</h3>
+      <ImportPhoto />
     </div>
   );
 }
