@@ -1,6 +1,5 @@
 import React from 'react';
 import './image-scroll.css';
-import TestImage from '../../images/01.jpeg'
 import NameForm from './form/form'
 
 
@@ -28,7 +27,7 @@ class ShowImage extends React.Component {
     }
 
     render() {
-        let tr= TestImage
+       
         return(
             <div>
                 <div>
