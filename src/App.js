@@ -62,7 +62,7 @@ class Navbar extends React.Component{
 function PracticeFeed() {
   return (
     <div className="App">
-      <h3>Practice those languages</h3>;
+      <h3>Practice those languages</h3>
       <OutputPracticeFeed />
    </div>
   );
@@ -71,7 +71,7 @@ function PracticeFeed() {
 function InputATranslation() {
   return (
     <div className="App">
-      <h3>Input your Translation</h3>;
+      <h3>Input your Translation</h3>
       <ShowImage />
    </div>
   );
@@ -80,7 +80,7 @@ function InputATranslation() {
 function UploadAnImage() {
   return (
     <div className="App">
-      <h3>Upload the image and caption</h3>;
+      <h3>Upload the image and caption</h3>
 
    </div>
   );
@@ -89,7 +89,7 @@ function UploadAnImage() {
 function About() {
   return (
     <div className="App">
-      <h1>About Page</h1>;
+      <h1>About Page</h1>
       <h2>Learn about the Treehacks Team who did this</h2>
       <p>State at ceiling lay on arms while youre using the keyboard so this human feeds me.</p>
       <p>I am a kitty cat, sup, feed me, no cares in the world</p>
@@ -102,7 +102,7 @@ function About() {
 function ContactUs() {
   return (
     <div className="App">
-      <h3>What's Wrong Now?</h3>;
+      <h3>What's Wrong Now?</h3>
    </div>
   );
 }
