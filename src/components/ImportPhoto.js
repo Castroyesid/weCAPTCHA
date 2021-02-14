@@ -6,30 +6,19 @@ import { Button } from '@material-ui/core'
 
 class ImportPhoto extends Component {
   
-    handleFirstNameChanged(event) {
-        var customer        = this.state.customer;
-        customer.firstName  = event.target.value;
-    
-        this.setState({ customer: customer });
-      }
-
     state = {
- 
       // Initially, no file is selected
       selectedFile: null
     };
     
     // On file select (from the pop up)
-    onFileChange = event => {
-    
+    onFileChange = event => { 
       // Update the state
-      this.setState({ selectedFile: event.target.files[0] });
-    
+      this.setState({ selectedFile: event.target.files[0] });    
     };
     
     // On file upload (click the upload button)
-    onFileUpload = () => {
-    
+    onFileUpload = () => {   
       // Create an object of formData
       const formData = new FormData();
     
@@ -86,9 +75,7 @@ class ImportPhoto extends Component {
       return (
         <div>
             <img src={logo} alt="Logo"height={200} width={200}/>
-            <h3>
-              Please select an Image to upload
-            </h3>
+            <h3>Please select an Image to upload</h3>
             <div>
                 <input type="file" onChange={this.onFileChange} />
                 <button onClick={this.onFileUpload}>
