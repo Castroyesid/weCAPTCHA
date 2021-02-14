@@ -1,61 +1,61 @@
 import React from 'react';
 import { Button } from '@material-ui/core'
-import logo from './logo.svg'
+import logo from './logo.svg';
 import './App.css'
-import MyForm from './components/MyForm.cs'
-import { ReactComponent as Logo } from './logo.svg';
-import ReactLogo from './logo.png';
-import Treehacks from './Treehacks.png'
-import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import CustomerForm from './components/CustomerForm.js';
-import MyFormJS from './components/MyForm.js';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { NavigationBar } from './components/NavigationBar';
-import { Home } from './components/Home/Home';
-import { About } from './About';
-import { NoMatch } from './NoMatch';
-import Sidebar from './components/Sidebar';
+import NavBar from './Components/NavBar.css';
+import ReactDOM from 'react-dom';
+import ShowImage from './Components/image-scroll/image-scroll';
+import NameForm from './Components/image-scroll/form/form'
+import Header from './Components/Header/Header'
 
-
-function handleNewButton(){
-  console.log("Is this new thing working?");
+function LearnALanguage(){
+  console.log("Let's Learn a Language!");
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    '& > *': {
-      margin: theme.spacing(1),
-      width: '25ch',
-    },
-  },
-}));
+function InputATranslation(){
+  console.log("Input your Translation");
+}
 
-function App() {
+function UploadAnImage(){
+  console.log("Upload the image and caption");
+}
 
-  const handleSubmit = event => {
-    event.preventDefault();
-    alert('You have submitted the form.')
-    console.log("Is this button working?");
+function AboutTheTeam(){
+  console.log("Learn about the Treehacks Team who did this");
+}
+
+function ContactUs(){
+  console.log("What's Wrong Now?");
+}
+
+class Navbar extends React.Component{
+  render() {
+      return (
+          <div>
+            <ul id="nav">
+              <li><a href="#"><Button variant="outline" onClick = {LearnALanguage}>Learn a Language</Button></a></li>
+              <li><a href="#"><Button variant="outline" onClick = {InputATranslation}>Input a Translation</Button></a></li>
+              <li><a href="#"><Button variant="outline" onClick = {UploadAnImage}>Upload an Image</Button></a></li>
+              <li><a href="#"><Button variant="outline" onClick = {AboutTheTeam}>About the Team</Button></a></li>
+              <li><a href="#"><Button variant="outline" onClick = {ContactUs}>Contact Us</Button></a></li>
+            </ul>
+          </div>
+      );
   }
-  
-  const classes = useStyles();
-  return (
-    <div className="App">
-
-        <img src={ReactLogo} alt = 'website logo' />
-        <h1> Treehacks Team 276 </h1>
-        <h2> Prepared by: David Hiltzman</h2>
-        <h1>Provide Translation for given image</h1>
-        
-        <MyFormJS/>
-
-        <img src={Treehacks} alt = 'website logo' />
-        
-        <Home/>
-    </div>
-  );
-
 }
+
+class App extends React.Component {
+render () {
+  return (
+    <div>
+      <Navbar/>
+      <div>
+        <ShowImage />
+        <NameForm />
+      </div>
+    </div>
+  )
+}
+}
+
 export default App;
