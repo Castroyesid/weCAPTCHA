@@ -3,7 +3,7 @@ import { Button } from '@material-ui/core'
 import logo from './logo.svg';
 import './App.css'
 import NavBar from './components/NavBar.css';
-import ReactDOM from 'react-dom';
+
 import ShowImage from './components/image-scroll/image-scroll.js';
 import NameForm from './components/image-scroll/form/form'
 
