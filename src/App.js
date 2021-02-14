@@ -31,7 +31,6 @@ class Navbar extends React.Component{
               <li><Link to="/ContactUs">Contact Us</Link></li>
             </ul>
 
-
             <Switch>
             <Route path="/PracticeFeed">
               <PracticeFeed />
