@@ -1,9 +1,9 @@
-import React from 'react';
+import React from 'react'
 import { Button } from '@material-ui/core'
-import logo from './logo.svg';
+import logo from './logo.png'
 import './App.css'
-import NavBar from './components/NavBar.css';
-import ShowImage from './components/image-scroll/image-scroll.js';
+import NavBar from './components/NavBar.css'
+import ShowImage from './components/image-scroll/image-scroll.js'
 import NameForm from './components/image-scroll/form/form'
 import OutputPracticeFeed from './components/PracticeFeed.js'
 
@@ -89,10 +89,14 @@ function About() {
   return (
     <div className="App">
       <h1>About Page</h1>
-      <h2>Learn about the Treehacks Team who did this</h2>
-      <p>State at ceiling lay on arms while youre using the keyboard so this human feeds me.</p>
-      <p>I am a kitty cat, sup, feed me, no cares in the world</p>
-      <p>Meow meow, I tell my human purr for no reason but to chase after</p>    
+      <h1>Welcome to weCAPTCHA!</h1>
+        <img src={logo} alt="Logo"height={200} width={200}/>
+        <h2>Why are we called weCAPTCHA?</h2>
+        <p>reCAPTCHA stands for "Completely Automated Public Turing test to tell Computers and Humans Apart" </p>
+        <p>but our team is aiming for a </p>
+        <p>"Completely Automated Public Translation test to teach Computers and Humans Alike"</p>
+
+        <h2>Our Goal:</h2>  
    </div>
   );
 }
