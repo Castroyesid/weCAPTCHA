@@ -7,6 +7,7 @@ import ShowImage from './components/image-scroll/image-scroll.js';
 import NameForm from './components/image-scroll/form/form'
 import OutputPracticeFeed from './components/PracticeFeed.js'
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -88,7 +89,11 @@ function UploadAnImage() {
 function About() {
   return (
     <div className="App">
-      <h3>Learn about the Treehacks Team who did this</h3>;
+      <h1>About Page</h1>;
+      <h2>Learn about the Treehacks Team who did this</h2>
+      <p>State at ceiling lay on arms while youre using the keyboard so this human feeds me.</p>
+      <p>I am a kitty cat, sup, feed me, no cares in the world</p>
+      <p>Meow meow, I tell my human purr for no reason but to chase after</p>
       
    </div>
   );
