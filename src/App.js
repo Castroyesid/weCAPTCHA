@@ -5,56 +5,103 @@ import './App.css'
 import NavBar from './components/NavBar.css';
 import ShowImage from './components/image-scroll/image-scroll.js';
 import NameForm from './components/image-scroll/form/form'
+import OutputPracticeFeed from './components/PracticeFeed.js'
 
-
-function LearnALanguage(){
-  console.log("Let's Learn a Language!");
-}
-
-function InputATranslation(){
-  console.log("Input your Translation");
-  Translate()
-}
-
-function UploadAnImage(){
-  console.log("Upload the image and caption");
-}
-
-function AboutTheTeam(){
-  console.log("Learn about the Treehacks Team who did this");
-}
-
-function ContactUs(){
-  console.log("What's Wrong Now?");
-}
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  Redirect,
+  useHistory,
+  useLocation
+} from "react-router-dom";
 
 class Navbar extends React.Component{
   render() {
       return (
+        <Router>
           <div>
             <ul id="nav">
-              <li><a href="#"><Button variant="outline" onClick = {LearnALanguage}>Learn a Language</Button></a></li>
-              <li><a href="#"><Button variant="outline" onClick = {InputATranslation}>Input a Translation</Button></a></li>
-              <li><a href="#"><Button variant="outline" onClick = {UploadAnImage}>Upload an Image</Button></a></li>
-              <li><a href="#"><Button variant="outline" onClick = {AboutTheTeam}>About the Team</Button></a></li>
-              <li><a href="#"><Button variant="outline" onClick = {ContactUs}>Contact Us</Button></a></li>
+            <li><Link to="/PracticeFeed">Practice Feed</Link></li>
+              <li><Link to="/InputATranslation">Input A Translation</Link></li>
+              <li><Link to="/UploadAnImage">Upload An Image</Link></li>
+              <li><Link to="/About">About The Team</Link></li>
+              <li><Link to="/ContactUs">Contact Us</Link></li>
             </ul>
+
+
+            <Switch>
+            <Route path="/PracticeFeed">
+              <PracticeFeed />
+            </Route>
+
+            <Route path="/InputATranslation">
+              <InputATranslation />
+            </Route>
+
+            <Route path="/UploadAnImage">
+              <UploadAnImage />
+            </Route>
+
+            <Route path="/About">
+              <About />
+            </Route>
+
+            <Route path="/ContactUs">
+              <ContactUs />
+            </Route>
+          </Switch>
           </div>
+          </Router>
       );
   }
 }
 
-function Translate() {
+function PracticeFeed() {
   return (
     <div className="App">
-      
-      <div className="buttAlign">
-        <ShowImage />
-        <NameForm />
-      </div>
-    </div>
+      <h3>Practice those languages</h3>;
+      <OutputPracticeFeed />
+   </div>
   );
 }
+
+function InputATranslation() {
+  return (
+    <div className="App">
+      <h3>Input your Translation</h3>;
+      <ShowImage />
+   </div>
+  );
+}
+
+function UploadAnImage() {
+  return (
+    <div className="App">
+      <h3>Upload the image and caption</h3>;
+
+   </div>
+  );
+}
+
+function About() {
+  return (
+    <div className="App">
+      <h3>Learn about the Treehacks Team who did this</h3>;
+      
+   </div>
+  );
+}
+
+function ContactUs() {
+  return (
+    <div className="App">
+      <h3>What's Wrong Now?</h3>;
+   </div>
+  );
+}
+
 
 class App extends React.Component {
 render () {
@@ -62,7 +109,7 @@ render () {
     <div>
       <Navbar />
       <div className="buttAlign">
-        <ShowImage />
+
       </div>
     </div>
   )
