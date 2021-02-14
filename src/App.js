@@ -2,11 +2,11 @@ import React from 'react';
 import { Button } from '@material-ui/core'
 import logo from './logo.svg';
 import './App.css'
-import NavBar from './Components/NavBar.css';
+import NavBar from './components/NavBar.css';
 import ReactDOM from 'react-dom';
-import ShowImage from './Components/image-scroll/image-scroll';
-import NameForm from './Components/image-scroll/form/form'
-import Header from './Components/Header/Header'
+import ShowImage from './components/image-scroll/image-scroll';
+import NameForm from './components/image-scroll/form/form'
+import Header from './components/Header/Header'
 
 function LearnALanguage(){
   console.log("Let's Learn a Language!");
