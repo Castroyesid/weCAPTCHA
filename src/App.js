@@ -4,9 +4,9 @@ import logo from './logo.svg';
 import './App.css'
 import NavBar from './components/NavBar.css';
 import ReactDOM from 'react-dom';
-import ShowImage from './components/image-scroll/image-scroll';
-import NameForm from './components/image-scroll/form/form'
-import Header from './components/Header/Header'
+import ShowImage from './components/image-scroll/image-scroll.js';
+import NameForm from './components/image-scroll/form/form.js'
+
 
 function LearnALanguage(){
   console.log("Let's Learn a Language!");
@@ -49,7 +49,6 @@ function Translate() {
     <div className="App">
       
       <div className="buttAlign">
-        <Header />
         <ShowImage />
         <NameForm />
       </div>
