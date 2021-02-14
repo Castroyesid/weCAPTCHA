@@ -44,18 +44,31 @@ class Navbar extends React.Component{
   }
 }
 
+function Translate() {
+  return (
+    <div className="App">
+      
+      <div className="buttAlign">
+        <Header />
+        <ShowImage />
+        <NameForm />
+      </div>
+    </div>
+  );
+}
+
 class App extends React.Component {
 render () {
   return (
     <div>
-      <Navbar/>
-      <div>
+      <Navbar />
+      <div className="buttAlign">
         <ShowImage />
-        <NameForm />
       </div>
     </div>
   )
 }
 }
+
 
 export default App;
