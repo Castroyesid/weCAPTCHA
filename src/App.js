@@ -7,6 +7,7 @@ import ShowImage from './components/image-scroll/image-scroll.js'
 import NameForm from './components/image-scroll/form/form'
 import ImportPhoto from './components/ImportPhoto.js'
 import Tweet from './components/Tweetpage.js'
+import Treehacks from './Treehacks.png'
 
 
 import {
@@ -62,7 +63,8 @@ class Navbar extends React.Component{
 function Tweetpage() {
   return (
       <div className="App">
-        <h3>Practice those languages</h3>
+        <h3>Practice the Icelandic langauge 
+        </h3>
         <Tweet />
       </div>
   );
@@ -97,8 +99,11 @@ function About() {
         <p>but our team is aiming for a </p>
         <p>"Completely Automated Public Translation test to teach Computers and Humans Alike"</p>
 
-        <h2>Our Goal:</h2> 
-        <p>Ensuring that no language is left behind.</p>
+        <h1>Our Goal:</h1> 
+        <h2>Bringing the last billion people online.</h2>
+
+        <h1>Brought to you by Treehacks 2021!</h1>
+        <img src={Treehacks} alt="Treehacks"height={726} width={1434}/>
    </div>
   );
 }
