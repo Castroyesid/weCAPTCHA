@@ -41,8 +41,8 @@ let u3= {
 let u4= {
     user: "Melissa Fumero",
     uname: "@melissafumero",
-    tval: "What’s this about new variants",
-    valt: "Hvað er þetta við ný afbrigði?r",
+    tval: "What’s this about new variants?",
+    valt: "Hvað er þetta við ný afbrigðir?",
     l: 3400,
     r: 181,
 }
